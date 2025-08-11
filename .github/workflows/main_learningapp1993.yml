@@ -30,9 +30,9 @@ jobs:
       - name: Build
         run: |
           msbuild learningapp.csproj /t:Build
-   
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v4
+      
+      - name: Upload ASP-app
+        uses: actions/upload-artifact@v3
         with:
           name: ASP-app
           path: '/published/**'
@@ -66,3 +66,4 @@ jobs:
           package: .
 
           
+
