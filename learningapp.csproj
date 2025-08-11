@@ -5,5 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
+<Target Name="pipelinePreDeployCopyAllFilesToOneFolder">
+  <!-- Add required tasks here, e.g., copying files to a folder -->
+  <Message Text="Copying files for deployment..." />
+</Target>
 </Project>
